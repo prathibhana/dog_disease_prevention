@@ -23,38 +23,45 @@ This project applies machine learning techniques to predict serious adverse heal
 - SQL
 - Git for version control
 
-## Installation
-1. Clone the repository:
+## Getting Started
+
+### Prerequisites
+- Python 3.9 or higher
+- pip (Python package manager)
+
+### Install Dependencies
 ```bash
-git clone <repo_url>
-
-1. Install dependencies:
-
 pip install -r requirements.txt
 
-Usage
+Running the Analysis & Model Comparison
 
-- Fetch and preprocess data
+The main analysis, data exploration, feature engineering, model training, and comparison are handled by the script:
 
-- Train models using provided scripts
+Msc_Project_code_eda_and_model_comparison.py
 
-- Deploy the Streamlit app:
+To execute, run:
 
-streamlit run app.py
+python Msc_Project_code_eda_and_model_comparison.py
+
+This will perform data processing, train multiple models, evaluate their performance, and output results including model metrics and visualizations.
+
+Running the Streamlit App
+
+The Streamlit app allows for interactive prediction and visualization. To launch the app, run:
+
+streamlit run Msc_Project_code_streamlit_app_build.py
 
 Project Structure
 
 /
-├── data/                    # Raw and processed datasets
-├── notebooks/               # Analysis notebooks
-├── src/
-│   ├── data_preprocessing.py   # Data cleaning and feature engineering scripts
-│   ├── model_training.py       # Model training and evaluation scripts
-│   ├── model_explanation.py    # Feature importance and explanation functions
-│   └── app.py                  # Streamlit app for inference
-├── requirements.txt         # Dependencies
-├── README.md                # Project documentation
-└── .gitignore               # Git ignore file
+├── data/                           # Raw and processed datasets
+├── notebooks/                      # Analysis notebooks (if any)
+├── scripts/
+│   ├── Msc_Project_code_eda_and_model_comparison.py  # Main analysis, model comparison
+│   └── Msc_Project_code_streamlit_app_build.py        # Streamlit Web App
+├── requirements.txt               # Dependencies
+├── README.md                        # Documentation
+└── .gitignore                       # Git ignore file
 
 Results & Performance
 
@@ -87,5 +94,3 @@ Inspired by ongoing developments in veterinary informatics and machine learning 
 License
 
 This project is open-source. See LICENSE file for details.
-
-Feel free to customize `<repo_url>` and any other sections as needed!
